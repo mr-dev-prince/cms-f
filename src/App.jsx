@@ -8,7 +8,8 @@ function App() {
     try {
       const getData = async () => {
         const res = await axios.get(
-          "http://phcms-env.eba-wekxmzzv.ap-south-1.elasticbeanstalk.com/get"
+          "http://phcms-env.eba-wekxmzzv.ap-south-1.elasticbeanstalk.com/get",
+          { withCredentials: true }
         );
         setData(res.data);
       };
