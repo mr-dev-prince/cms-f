@@ -20,6 +20,7 @@ function App() {
   }, []);
   return (
     <div>
+      <h1 className="text-xl text-black ">Prince Kumar</h1>
       <h1 className="text-xl font-bold text-black">{data?.par}</h1>
     </div>
   );
