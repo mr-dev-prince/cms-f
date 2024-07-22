@@ -12,7 +12,7 @@ function App() {
         );
         setData(res.data);
       };
-
+      console.log(data);
       getData();
     } catch (error) {
       console.log("something went wrong", error?.message);
@@ -20,7 +20,7 @@ function App() {
   }, []);
   return (
     <div>
-      <h1>{data?.par}</h1>
+      <h1 className="text-xl font-bold">{data?.par}</h1>
     </div>
   );
 }
