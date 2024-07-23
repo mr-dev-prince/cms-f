@@ -7,10 +7,9 @@ function App() {
   useEffect(() => {
     try {
       const getData = async () => {
-        const res = await axios.get(
-          "http://phcms-env.eba-wekxmzzv.ap-south-1.elasticbeanstalk.com/get",
-          { withCredentials: true }
-        );
+        const res = await axios.get("https://princechaurasia.tech/get", {
+          withCredentials: true,
+        });
         setData(res.data);
       };
       console.log(data);
